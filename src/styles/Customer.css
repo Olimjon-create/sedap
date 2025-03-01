@@ -115,6 +115,9 @@ body {
 }
 
 .btn2 {
+  width: 77px;
+  height: 44px;
+  border-radius: 10px;
   background-color: #f4f4f4;
   border: none;
   padding: 10px 20px;
@@ -127,4 +130,12 @@ body {
 
 .btn2:hover {
   background-color: #e0e0e0;
+  cursor: pointer;
+}
+.photo {
+  margin-left: 40px;
+}
+.photos {
+  margin-right: 30px;
+  margin-top: 5px;
 }
