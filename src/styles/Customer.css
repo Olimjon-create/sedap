@@ -166,7 +166,9 @@ body {
   width: 48px;
   height: 48px;
   border-radius: 12px;
+  margin-top: 50px;
   background-color: #5e6c9326;
+  cursor: pointer;
 }
 
 hr {
@@ -174,6 +176,7 @@ hr {
   height: 56px;
   border: 1px solid #d0d6de;
   margin-left: 30px;
+  margin-top: 50px;
 }
 
 .borders {
@@ -182,12 +185,15 @@ hr {
   border-radius: 50%;
   background-color: #c4c4c4;
   border: 5px solid #fff;
+  margin-top: 50px;
+  cursor: pointer;
 }
 
 .customer_text {
   font-size: 16px;
   color: #464255;
   font-family: sans-serif;
+  margin-top: 50px;
 }
 
 .img_tag {
