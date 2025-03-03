@@ -77,6 +77,52 @@ function Customer() {
   ];
   return (
     <div>
+      <div className="input-customer-search">
+        <div className="search">
+          <input type="Search here" placeholder="Search here" />
+        </div>
+        <div className="icon_search">
+          <Image
+            className="img_tag"
+            src="/alarm-clock.png"
+            alt="sort"
+            width={28}
+            height={28}
+          />
+        </div>
+        <div className="icon_search">
+          <Image
+            className="img_tag"
+            src="/message.png"
+            alt="sort"
+            width={28}
+            height={28}
+          />
+        </div>
+        <div className="icon_search">
+          <Image
+            className="img_tag"
+            src="/price.png"
+            alt="sort"
+            width={28}
+            height={28}
+          />
+        </div>
+        <div className="icon_search">
+          <Image
+            className="img_tag"
+            src="/settings.png"
+            alt="sort"
+            width={28}
+            height={28}
+          />
+        </div>
+        <hr />
+        <div className="write_name">
+          <p className="customer_text">Hello, Samantha</p>
+        </div>
+        <div className="borders"></div>
+      </div>
       <div className="headers">
         <div className="Customer">
           <h1 className="text">General Customer</h1>
