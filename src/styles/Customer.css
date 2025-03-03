@@ -1,6 +1,8 @@
 body {
   background-color: #f4f4f4;
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .headers {
@@ -14,15 +16,13 @@ body {
 .text {
   color: #464255;
   font-size: 32px;
-  margin: 20px;
-  margin-left: 70px;
+  margin: 20px 0 0 70px;
 }
 
 .text1 {
   font-size: 16px;
   color: #a3a3a3;
-  margin-left: 20px;
-  margin-left: 70px;
+  margin: 0 0 0 70px;
 }
 
 .btn {
@@ -130,20 +130,23 @@ body {
 
 .btn2:hover {
   background-color: #e0e0e0;
-  cursor: pointer;
 }
+
 .photo {
   margin-left: 40px;
 }
+
 .photos {
   margin-right: 30px;
   margin-top: 5px;
 }
+
 .input-customer-search {
   display: flex;
   gap: 20px;
   align-items: center;
 }
+
 .search input {
   width: 866px;
   height: 56px;
@@ -155,9 +158,10 @@ body {
   font-family: sans-serif;
   font-size: 16px;
   margin-left: 80px;
-  margin: 50px;
+  margin-top: 50px;
   padding-left: 15px;
 }
+
 .icon_search {
   width: 48px;
   height: 48px;
@@ -171,19 +175,21 @@ hr {
   border: 1px solid #d0d6de;
   margin-left: 30px;
 }
+
 .borders {
   width: 56px;
   height: 56px;
-  border-radius: 63px;
-  border-width: 4px;
+  border-radius: 50%;
   background-color: #c4c4c4;
-  border: 5px solid #ffff;
+  border: 5px solid #fff;
 }
+
 .customer_text {
   font-size: 16px;
   color: #464255;
   font-family: sans-serif;
 }
+
 .img_tag {
   margin-top: 10px;
   margin-left: 10px;
