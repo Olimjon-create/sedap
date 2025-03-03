@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Customer.css";
 import Image from "next/image";
-import Images from "next/image";
+
 function Customer() {
   const arr = [
     {
@@ -75,17 +75,18 @@ function Customer() {
       buttonPrice: "$21.61",
     },
   ];
+
   return (
     <div>
       <div className="input-customer-search">
         <div className="search">
-          <input type="Search here" placeholder="Search here" />
+          <input type="search" placeholder="Search here" />
         </div>
         <div className="icon_search">
           <Image
             className="img_tag"
             src="/alarm-clock.png"
-            alt="sort"
+            alt="Alarm Clock"
             width={28}
             height={28}
           />
@@ -94,7 +95,7 @@ function Customer() {
           <Image
             className="img_tag"
             src="/message.png"
-            alt="sort"
+            alt="Message"
             width={28}
             height={28}
           />
@@ -103,7 +104,7 @@ function Customer() {
           <Image
             className="img_tag"
             src="/price.png"
-            alt="sort"
+            alt="Price"
             width={28}
             height={28}
           />
@@ -112,7 +113,7 @@ function Customer() {
           <Image
             className="img_tag"
             src="/settings.png"
-            alt="sort"
+            alt="Settings"
             width={28}
             height={28}
           />
@@ -130,18 +131,18 @@ function Customer() {
         </div>
         <div className="Customer-section">
           <button className="btn">
-            <Images
+            <Image
               className="photos"
               src="/Nest.png"
-              alt="sort"
+              alt="Filter"
               width={16}
               height={16}
             />
             Filter
-            <Images
+            <Image
               className="photo"
               src="/stay.png"
-              alt="sort"
+              alt="Stay"
               width={16}
               height={16}
             />
@@ -152,24 +153,24 @@ function Customer() {
         <div className="Select">
           <ul>
             <li>Customer ID</li>
-            <Image src="/sort.png" alt="sort" width={16} height={16} />{" "}
+            <Image src="/sort.png" alt="Sort" width={16} height={16} />
             <li>Join Date</li>
-            <Image src="/sort.png" alt="sort" width={16} height={16} />{" "}
+            <Image src="/sort.png" alt="Sort" width={16} height={16} />
           </ul>
         </div>
         <div className="Select">
           <ul>
             <li>Customer Name</li>
             <li>Location</li>
-            <Image src="/sort.png" alt="sort" width={16} height={16} />{" "}
+            <Image src="/sort.png" alt="Sort" width={16} height={16} />
           </ul>
         </div>
         <div className="Select">
           <ul>
             <li>Total Spent</li>
-            <Image src="/sort.png" alt="sort" width={16} height={16} />{" "}
+            <Image src="/sort.png" alt="Sort" width={16} height={16} />
             <li>Last Order</li>
-            <Image src="/sort.png" alt="sort" width={16} height={16} />{" "}
+            <Image src="/sort.png" alt="Sort" width={16} height={16} />
           </ul>
         </div>
       </div>
@@ -195,7 +196,7 @@ function Customer() {
                 <Image
                   className="picture"
                   src={item.ImageTitle}
-                  alt="Image"
+                  alt="Border Image"
                   width={16}
                   height={16}
                 />
@@ -207,4 +208,5 @@ function Customer() {
     </div>
   );
 }
+
 export default Customer;
