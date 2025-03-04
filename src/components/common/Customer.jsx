@@ -1,6 +1,7 @@
 import React from "react";
-import "../../styles/Customer.css";
+import styles from "../../styles/Customer.module.css";
 import Image from "next/image";
+
 function Customer() {
   const arr = [
     {
@@ -77,133 +78,74 @@ function Customer() {
 
   return (
     <div>
-      <div className="input-customer-search">
-        <div className="search">
+      <div className={styles.inputCustomerSearch}>
+        <div className={styles.search}>
           <input type="search" placeholder="Search here" />
         </div>
-        <div className="icon_search">
+        <div className={styles.iconSearch}>
           <Image
-            className="img_tag"
             src="/alarm-clock.png"
             alt="Alarm Clock"
             width={28}
             height={28}
           />
         </div>
-        <div className="icon_search">
-          <Image
-            className="img_tag"
-            src="/message.png"
-            alt="Message"
-            width={28}
-            height={28}
-          />
+        <div className={styles.iconSearch}>
+          <Image src="/message.png" alt="Message" width={28} height={28} />
         </div>
-        <div className="icon_search">
-          <Image
-            className="img_tag"
-            src="/price.png"
-            alt="Price"
-            width={28}
-            height={28}
-          />
+        <div className={styles.iconSearch}>
+          <Image src="/price.png" alt="Price" width={28} height={28} />
         </div>
-        <div className="icon_search">
-          <Image
-            className="img_tag"
-            src="/settings.png"
-            alt="Settings"
-            width={28}
-            height={28}
-          />
+        <div className={styles.iconSearch}>
+          <Image src="/settings.png" alt="Settings" width={28} height={28} />
         </div>
         <hr />
-        <div className="write_name">
-          <p className="customer_text">Hello, Samantha</p>
+        <div className={styles.writeName}>
+          <p className={styles.customerText}>Hello, Samantha</p>
         </div>
-        <div className="borders"></div>
+        <div className={styles.borders}></div>
       </div>
-      <div className="headers">
-        <div className="Customer">
-          <h1 className="text">General Customer</h1>
-          <p className="text1">Here is your general customers list data</p>
+
+      <div className={styles.headers}>
+        <div className={styles.customer}>
+          <h1 className={styles.text}>General Customer</h1>
+          <p className={styles.text1}>
+            Here is your general customers list data
+          </p>
         </div>
-        <div className="Customer-section">
-          <button className="btn">
-            <Image
-              className="photos"
-              src="/Nest.png"
-              alt="Filter"
-              width={16}
-              height={16}
-            />
+        <div className={styles.customerSection}>
+          <button className={styles.btn}>
+            <Image src="/Nest.png" alt="Filter" width={16} height={16} />
             Filter
-            <Image
-              className="photo"
-              src="/stay.png"
-              alt="Stay"
-              width={16}
-              height={16}
-            />
+            <Image src="/stay.png" alt="Stay" width={16} height={16} />
           </button>
         </div>
       </div>
-      <div className="Section">
-        <div className="Select">
-          <ul>
-            <li>Customer ID</li>
-            <Image src="/sort.png" alt="Sort" width={16} height={16} />
-            <li>Join Date</li>
-            <Image src="/sort.png" alt="Sort" width={16} height={16} />
-          </ul>
-        </div>
-        <div className="Select">
-          <ul>
-            <li>Customer Name</li>
-            <li>Location</li>
-            <Image src="/sort.png" alt="Sort" width={16} height={16} />
-          </ul>
-        </div>
-        <div className="Select">
-          <ul>
-            <li>Total Spent</li>
-            <Image src="/sort.png" alt="Sort" width={16} height={16} />
-            <li>Last Order</li>
-            <Image src="/sort.png" alt="Sort" width={16} height={16} />
-          </ul>
-        </div>
+
+      <div className={styles.section}>
+        {arr.map((item) => (
+          <div className={styles.option} key={item.id}>
+            <div className={styles.value}>
+              <p>{item.name}</p>
+              <p>{item.titleName}</p>
+            </div>
+            <div className={styles.value}>
+              <p>{item.nameSelectName}</p>
+              <p>{item.nameSectionName}</p>
+            </div>
+            <div className={styles.value}>
+              <p>{item.priceTitle}</p>
+              <button className={styles.btn2}>{item.buttonPrice}</button>
+              <Image
+                src={item.ImageTitle}
+                alt="Border"
+                width={16}
+                height={16}
+              />
+            </div>
+          </div>
+        ))}
       </div>
-      {arr.map((item) => (
-        <div className="Option" key={item.id}>
-          <div className="Value">
-            <ul>
-              <li className="text3">{item.name}</li>
-              <li className="text4">{item.titleName}</li>
-            </ul>
-          </div>
-          <div className="Value">
-            <ul>
-              <li className="text5">{item.nameSelectName}</li>
-              <li className="text4">{item.nameSectionName}</li>
-            </ul>
-          </div>
-          <div className="Value">
-            <ul>
-              <li className="text4">{item.priceTitle}</li>
-              <li>
-                <button className="btn2">{item.buttonPrice}</button>
-                <Image
-                  className="picture"
-                  src={item.ImageTitle}
-                  alt="Border Image"
-                  width={16}
-                  height={16}
-                />
-              </li>
-            </ul>
-          </div>
-        </div>
-      ))}
     </div>
   );
 }
