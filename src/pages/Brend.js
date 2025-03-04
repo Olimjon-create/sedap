@@ -1,5 +1,5 @@
-import Customer from "@/components/Customer";
-import Sedap from "@/components/Sedap";
+import Customer from "@/components/common/Customer";
+import Sedap from "@/components/common/Sedap";
 import React from "react";
 function Brend() {
   return (
